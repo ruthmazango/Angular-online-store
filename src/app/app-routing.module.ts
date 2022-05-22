@@ -7,9 +7,11 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { LandingComponent } from "./landing/landing.component";
 
 const routes: Routes = [
-    { path: '', redirectTo: '/', pathMatch: 'full'},
+    { path: '', pathMatch: 'full', component: LandingComponent},
+    
     { path: 'recipes', component: RecipesComponent },
     { path: 'recipe/:id', component: RecipeDetailComponent },
     { path: 'shopping-list', component: ShoppingListComponent },
